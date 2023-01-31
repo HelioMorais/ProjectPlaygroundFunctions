@@ -15,6 +15,15 @@ splitSentence('vamo que vamo');
 splitSentence('foguete');
 
 // Desafio 3 - Crie a função concatName
+function concatName(array) {
+  let firstItem = array[0];
+  let lastItem = array[array.length - 1];
+  let concatAll = `${lastItem}, ${firstItem}`;
+  return concatAll;
+}
+concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']);
+concatName(['foguete', 'não', 'tem', 'ré']);
+concatName(['captain', 'my', 'captain']);
 
 // Desafio 4 - Crie a função footballPoints
 
