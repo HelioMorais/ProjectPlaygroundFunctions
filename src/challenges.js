@@ -4,7 +4,15 @@ const elefante = true;
 const macaco = false;
 const compareTrue = (a, b) => a && b;
 console.log(compareTrue(girafa, elefante));
+console.log(compareTrue(macaco, elefante));
 // Desafio 2 - Crie a função splitSentence
+function splitSentence(sentence) {
+  let words = sentence.split(' ');
+  return words;
+}
+splitSentence('go trybe');
+splitSentence('vamo que vamo');
+splitSentence('foguete');
 
 // Desafio 3 - Crie a função concatName
 
