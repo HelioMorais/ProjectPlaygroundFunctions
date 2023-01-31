@@ -1,5 +1,9 @@
 // Desafio 1 - Crie a função compareTrue
-
+const girafa = true;
+const elefante = true;
+const macaco = false;
+const compareTrue = (a, b) => a && b;
+console.log(compareTrue(girafa, elefante));
 // Desafio 2 - Crie a função splitSentence
 
 // Desafio 3 - Crie a função concatName
