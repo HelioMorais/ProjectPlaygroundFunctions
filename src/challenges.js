@@ -26,6 +26,13 @@ concatName(['foguete', 'não', 'tem', 'ré']);
 concatName(['captain', 'my', 'captain']);
 
 // Desafio 4 - Crie a função footballPoints
+function footballPoints(win, ties) {
+  let points = (win * 3) + ties;
+  return points;
+}
+footballPoints(14, 8);
+footballPoints(1, 2);
+footballPoints(0, 0);
 
 // Desafio 5 - Crie a função highestCount
 
