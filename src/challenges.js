@@ -35,6 +35,23 @@ footballPoints(1, 2);
 footballPoints(0, 0);
 
 // Desafio 5 - Crie a função highestCount
+function highestCount(array) {
+  let numberBig = array[0];
+  let repetitions = 0;
+
+  for (let index = 0; index < array.length; index += 1) {
+    if (numberBig < array[index]) {
+      numberBig = array[index];
+      repetitions = 1;
+    } else if (array[index] === numberBig) {
+      repetitions += 1;
+    }
+  }
+  return repetitions;
+}
+highestCount([9, 1, 2, 3, 9, 5, 7]);
+highestCount([0, 4, 4, 4, 9, 2, 1]);
+highestCount([0, 0, 0]);
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
