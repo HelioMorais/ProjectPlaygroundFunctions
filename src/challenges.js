@@ -175,6 +175,7 @@ console.log(decode('h2ll4'));
 console.log(encode('How are you today?'));
 console.log(encode('This is an encoding test.'));
 console.log(encode('go Trybe!'));
+/* eslint-disable complexity */
 // Desafio 10 - Crie a função techList
 
 // Não modifique essas linhas
