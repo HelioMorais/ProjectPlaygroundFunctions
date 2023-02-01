@@ -94,7 +94,25 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 console.log(catAndMouse(1, 4, 5));
 // Desafio 8 - Crie a função fizzBuzz
-
+// eslint-disable-next-line complexity, sonarjs/cognitive-complexity
+function fizzBuzz(param) {
+  let result = [];
+  for (let index = 0; index < param.length; index += 1) {
+    if (param[index] % 3 === 0 && param[index] % 5 === 0) {
+      result.push('fizzBuzz');
+    } else if (param[index] % 3 === 0 && param[index] % 5 !== 0) {
+      result.push('fizz');
+    } else if (param[index] % 3 !== 0 && param[index] % 5 === 0) {
+      result.push('buzz');
+    } else {
+      result.push('bug!');
+    }
+  }
+  return result;
+}
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
+console.log(fizzBuzz([7, 9]));
+console.log(fizzBuzz([9, 25]));
 // Desafio 9 - Crie a função encode e a função decode
 
 // Desafio 10 - Crie a função techList
