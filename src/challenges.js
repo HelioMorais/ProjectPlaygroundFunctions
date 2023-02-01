@@ -114,7 +114,65 @@ console.log(fizzBuzz([2, 15, 7, 9, 45]));
 console.log(fizzBuzz([7, 9]));
 console.log(fizzBuzz([9, 25]));
 // Desafio 9 - Crie a função encode e a função decode
-
+// eslint-disable-next-line complexity, sonarjs/cognitive-complexity, max-lines-per-function
+function encode(barabam) {
+  let result = '';
+  for (let index = 0; index < barabam.length; index += 1) {
+    switch (barabam[index]) {
+    case 'a':
+      result += 1;
+      break;
+    case 'e':
+      result += 2;
+      break;
+    case 'i':
+      result += 3;
+      break;
+    case 'o':
+      result += 4;
+      break;
+    case 'u':
+      result += 5;
+      break;
+    default:
+      result += barabam[index];
+      break;
+    }
+  }
+  return result;
+}
+// eslint-disable-next-line max-lines-per-function, complexity, sonarjs/no-identical-functions
+function decode(barabam) {
+  let result = '';
+  for (let index = 0; index < barabam.length; index += 1) {
+    switch (barabam[index]) {
+    case '1':
+      result += 'a';
+      break;
+    case '2':
+      result += 'e';
+      break;
+    case '3':
+      result += 'i';
+      break;
+    case '4':
+      result += 'o';
+      break;
+    case '5':
+      result += 'u';
+      break;
+    default:
+      result += barabam[index];
+      break;
+    }
+  }
+  return result;
+}
+console.log(encode('hello'));
+console.log(decode('h2ll4'));
+console.log(encode('How are you today?'));
+console.log(encode('This is an encoding test.'));
+console.log(encode('go Trybe!'));
 // Desafio 10 - Crie a função techList
 
 // Não modifique essas linhas
