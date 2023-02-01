@@ -177,7 +177,17 @@ console.log(encode('This is an encoding test.'));
 console.log(encode('go Trybe!'));
 /* eslint-disable complexity */
 // Desafio 10 - Crie a função techList
-
+function techList(array, string) {
+  let result = [];
+  let object = {};
+  array = array.sort();
+  for (const iterator of array) {
+    object = { tech: iterator, name: string };
+    result.push(object);
+  }
+  return result;
+}
+console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 // Não modifique essas linhas
 module.exports = {
   calcTriangleArea: typeof calcTriangleArea === 'function' ? calcTriangleArea : (() => {}),
