@@ -82,11 +82,11 @@ calcAllAreas(10, 50, 'quadrado');
 function catAndMouse(mouse, cat1, cat2) {
   let distg1 = mouse - cat1;
   let distg2 = mouse - cat2;
-  let result = '';
+  let result;
   if (distg1 > distg2) {
-    result = 'cat1';
-  } else if (distg1 < distg2) {
     result = 'cat2';
+  } else if (distg2 > distg1) {
+    result = 'cat1';
   } else if (distg1 === distg2) {
     console.log('os gatos trombam e o rato foge');
   }
