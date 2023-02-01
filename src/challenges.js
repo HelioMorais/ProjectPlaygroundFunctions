@@ -1,3 +1,5 @@
+/* eslint-disable sonarjs/cognitive-complexity */
+/* eslint-disable max-lines-per-function */
 // Desafio 1 - Crie a função compareTrue
 const girafa = true;
 const elefante = true;
@@ -94,7 +96,7 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 console.log(catAndMouse(1, 4, 5));
 // Desafio 8 - Crie a função fizzBuzz
-// eslint-disable-next-line complexity, sonarjs/cognitive-complexity
+/* eslint-disable complexity */
 function fizzBuzz(param) {
   let result = [];
   for (let index = 0; index < param.length; index += 1) {
@@ -114,7 +116,7 @@ console.log(fizzBuzz([2, 15, 7, 9, 45]));
 console.log(fizzBuzz([7, 9]));
 console.log(fizzBuzz([9, 25]));
 // Desafio 9 - Crie a função encode e a função decode
-// eslint-disable-next-line complexity, sonarjs/cognitive-complexity, max-lines-per-function
+/* eslint-disable complexity */
 function encode(barabam) {
   let result = '';
   for (let index = 0; index < barabam.length; index += 1) {
@@ -141,7 +143,7 @@ function encode(barabam) {
   }
   return result;
 }
-// eslint-disable-next-line max-lines-per-function, complexity, sonarjs/no-identical-functions
+/* eslint-disable complexity */
 function decode(barabam) {
   let result = '';
   for (let index = 0; index < barabam.length; index += 1) {
