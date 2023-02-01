@@ -80,19 +80,19 @@ calcAllAreas(10, 50, 'retângulo');
 calcAllAreas(10, 50, 'quadrado');
 // Desafio 7 - Crie a função catAndMouse
 function catAndMouse(mouse, cat1, cat2) {
-  let distg1 = mouse - cat1;
-  let distg2 = mouse - cat2;
+  let distg1 = Math.abs(mouse - cat1);
+  let distg2 = Math.abs(mouse - cat2);
   let result;
   if (distg1 > distg2) {
     result = 'cat2';
   } else if (distg2 > distg1) {
     result = 'cat1';
   } else if (distg1 === distg2) {
-    console.log('os gatos trombam e o rato foge');
+    result = 'os gatos trombam e o rato foge';
   }
   return result;
 }
-catAndMouse(10, 5, 3);
+console.log(catAndMouse(1, 4, 5));
 // Desafio 8 - Crie a função fizzBuzz
 
 // Desafio 9 - Crie a função encode e a função decode
