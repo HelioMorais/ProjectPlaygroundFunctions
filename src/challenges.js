@@ -121,24 +121,24 @@ function encode(barabam) {
   let result = '';
   for (let index = 0; index < barabam.length; index += 1) {
     switch (barabam[index]) {
-    case 'a':
-      result += 1;
-      break;
-    case 'e':
-      result += 2;
-      break;
-    case 'i':
-      result += 3;
-      break;
-    case 'o':
-      result += 4;
-      break;
-    case 'u':
-      result += 5;
-      break;
-    default:
-      result += barabam[index];
-      break;
+      case 'a':
+        result += 1;
+        break;
+      case 'e':
+        result += 2;
+        break;
+      case 'i':
+        result += 3;
+        break;
+      case 'o':
+        result += 4;
+        break;
+      case 'u':
+        result += 5;
+        break;
+      default:
+        result += barabam[index];
+        break;
     }
   }
   return result;
@@ -148,24 +148,24 @@ function decode(barabam) {
   let result = '';
   for (let index = 0; index < barabam.length; index += 1) {
     switch (barabam[index]) {
-    case '1':
-      result += 'a';
-      break;
-    case '2':
-      result += 'e';
-      break;
-    case '3':
-      result += 'i';
-      break;
-    case '4':
-      result += 'o';
-      break;
-    case '5':
-      result += 'u';
-      break;
-    default:
-      result += barabam[index];
-      break;
+      case '1':
+        result += 'a';
+        break;
+      case '2':
+        result += 'e';
+        break;
+      case '3':
+        result += 'i';
+        break;
+      case '4':
+        result += 'o';
+        break;
+      case '5':
+        result += 'u';
+        break;
+      default:
+        result += barabam[index];
+        break;
     }
   }
   return result;
@@ -182,7 +182,10 @@ function techList(array, string) {
   let object = {};
   array = array.sort();
   for (const iterator of array) {
-    object = { tech: iterator, name: string };
+    object = {
+      tech: iterator,
+      name: string,
+    };
     result.push(object);
   }
   return result;
